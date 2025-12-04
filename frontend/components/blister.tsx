@@ -12,7 +12,7 @@ function formatDate(date: Date) {
   return formattedDate;
 }
 
-export default ({ startDate, nWeeks = 3, placebo = false }: { startDate: Date | string, nWeeks?: number, placebo?: boolean }) => {
+const Blister = ({ startDate, nWeeks = 3, placebo = false }: { startDate: Date | string, nWeeks?: number, placebo?: boolean }) => {
   const rows = 7;
   const cols = nWeeks;
   const total = rows * cols;
@@ -144,6 +144,7 @@ export default ({ startDate, nWeeks = 3, placebo = false }: { startDate: Date | 
     </View>
   )
 }
+export default Blister
 
 const styles = StyleSheet.create({
   container: {

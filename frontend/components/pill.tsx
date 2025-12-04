@@ -1,6 +1,6 @@
 import { G, Ellipse, Path, Circle } from "react-native-svg";
 
-export default function Pill({ pillHeight = "5rem", x = 0, y = 0, size = 1, taken = false }: { pillHeight?: string, x?: number, y?: number, size?: number, taken?: boolean }) {
+const Pill = ({ pillHeight = "5rem", x = 0, y = 0, size = 1, taken = false }: { pillHeight?: string, x?: number, y?: number, size?: number, taken?: boolean }) => {
   const rx = 2 * size;
   const ry = 1.8 * size;
   const pillOpacity = taken ? 0 : 1;
@@ -75,3 +75,5 @@ export default function Pill({ pillHeight = "5rem", x = 0, y = 0, size = 1, take
     </G>
   )
 }
+
+export default Pill
