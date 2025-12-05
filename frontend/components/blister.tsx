@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Text, StyleSheet, View, Pressable } from "react-native";
+import { Text, StyleSheet, View, Pressable, Platform } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import Pill from "./pill"
 
@@ -89,7 +89,6 @@ const Blister = ({ startDate, nWeeks = 3, placebo = false }: { startDate: Date |
           onPress={() => setTakenPills(prev => {
             const newState = [...prev];
             newState[pillIndex] = !prev[pillIndex];
-            console.log('setting pill ' + pillIndex + ' to ' + newState[pillIndex]);
             return newState;
           })
           }

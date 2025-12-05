@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.letspill"
     },
     "android": {
       "adaptiveIcon": {
@@ -47,7 +48,8 @@
             "./assets/fonts/Inter/Inter18pt-Black.ttf"
           ]
         }
-      ]
+      ],
+      "expo-secure-store",
     ],
     "experiments": {
       "typedRoutes": true,

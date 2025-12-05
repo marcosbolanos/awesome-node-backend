@@ -1,6 +1,6 @@
 import { G, Ellipse, Path, Circle } from "react-native-svg";
 
-const Pill = ({ pillHeight = "5rem", x = 0, y = 0, size = 1, taken = false }: { pillHeight?: string, x?: number, y?: number, size?: number, taken?: boolean }) => {
+const Pill = ({ x = 0, y = 0, size = 1, taken = false }: { pillHeight?: string, x?: number, y?: number, size?: number, taken?: boolean }) => {
   const rx = 2 * size;
   const ry = 1.8 * size;
   const pillOpacity = taken ? 0 : 1;

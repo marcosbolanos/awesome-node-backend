@@ -8,6 +8,13 @@
       "when": 1764864269552,
       "tag": "0000_common_catseye",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1764943231236,
+      "tag": "0001_hot_luckman",
+      "breakpoints": true
     }
   ]
 }
